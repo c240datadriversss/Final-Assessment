@@ -45,10 +45,8 @@ c240-Data-Driversss-project/
 - Technology stack
 
 ### 📧 **Contact** (contact.html)
-- Contact form with validation
 - FAQ section
 - Alternative contact methods
-- Feedback submission
 
 ### 💬 **Chatbot** (All Pages)
 - Floating widget (bottom-right)
@@ -65,48 +63,6 @@ c240-Data-Driversss-project/
 ✅ **Fast** - Static site, no database needed  
 ✅ **Private** - No tracking, data stays local  
 ✅ **Accessible** - Semantic HTML, keyboard navigation  
-
----
-
-## 🚀 Deployment (3 Steps)
-
-### Step 1: Commit Code
-```bash
-cd c:\c240-Data-Driversss-project
-git add .
-git commit -m "Initial project: Dessert Substitution Chatbot"
-git push origin main
-```
-
-### Step 2: Enable GitHub Pages
-1. Go to GitHub repository Settings
-2. Scroll to "Pages" section
-3. Select "Deploy from a branch"
-4. Choose "main" branch
-5. Click "Save"
-
-### Step 3: Visit Your Site
-Your site will be live at:
-```
-https://JavierYeoRP.github.io/c240-Data-Driversss-project
-```
-
----
-
-## 🧪 Test Locally
-
-### Option 1: Python (Recommended)
-```bash
-cd c:\c240-Data-Driversss-project
-python -m http.server 8000
-# Visit: http://localhost:8000
-```
-
-### Option 2: Direct
-- Simply double-click `index.html` to open in browser
-- Chat and navigation will work locally
-
----
 
 ## 💬 Chatbot Usage
 

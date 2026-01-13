@@ -143,53 +143,13 @@ The chatbot intelligently handles queries about:
 - Optimized for GitHub Pages
 - Session-based storage only
 
----
-
-## 🚀 Deployment Instructions
-
-### **To Deploy on GitHub Pages:**
-
-1. **Commit and push to GitHub:**
-   ```bash
-   cd c:\c240-Data-Driversss-project
-   git add .
-   git commit -m "Initial project: Dessert Substitution Chatbot"
-   git push origin main
-   ```
-
-2. **Enable GitHub Pages:**
-   - Go to repository Settings
-   - Click "Pages" in left sidebar
-   - Select "Deploy from a branch"
-   - Choose "main" branch
-   - Save
-
-3. **Your site will be live at:**
-   - `https://JavierYeoRP.github.io/c240-Data-Driversss-project`
-
-### **To Test Locally:**
-```bash
-# Option 1: Python 3
-python -m http.server 8000
-
-# Option 2: Python 2
-python -m SimpleHTTPServer 8000
-
-# Then open: http://localhost:8000
-```
-
----
-
 ## 📋 Chatbot Usage Examples
 
 Users can ask:
 - "What can I substitute for eggs?"
 - "Tell me about butter alternatives"
-- "How do I replace milk?"
 - "Chocolate substitutes?"
 - "What can I use instead of sugar?"
-- "Do you have egg-free options?"
-- "Help" - to see all capabilities
 
 ---
 
