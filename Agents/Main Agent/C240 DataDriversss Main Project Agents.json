@@ -501,7 +501,7 @@
               "agentMemoryType": "windowSize"
             },
             "id": "agentAgentflow_0-input-agentMemoryWindowSize-number",
-            "display": true
+            "display": false
           },
           {
             "label": "Max Token Limit",
@@ -663,7 +663,7 @@
           "agentKnowledgeDocumentStores": "",
           "agentKnowledgeVSEmbeddings": "",
           "agentEnableMemory": true,
-          "agentMemoryType": "windowSize",
+          "agentMemoryType": "allMessages",
           "agentUserMessage": "<p><span class=\"variable\" data-type=\"mention\" data-id=\"question\" data-label=\"question\">{{ question }}</span> </p>",
           "agentReturnResponseAs": "assistantMessage",
           "agentStructuredOutput": "",
@@ -675,8 +675,7 @@
             "maxTokens": "300",
             "streaming": true,
             "agentModel": "groqChat"
-          },
-          "agentMemoryWindowSize": "2"
+          }
         },
         "outputAnchors": [
           {
@@ -1257,7 +1256,7 @@
               "agentMemoryType": "windowSize"
             },
             "id": "agentAgentflow_1-input-agentMemoryWindowSize-number",
-            "display": true
+            "display": false
           },
           {
             "label": "Max Token Limit",
@@ -1425,7 +1424,7 @@
           ],
           "agentKnowledgeVSEmbeddings": "",
           "agentEnableMemory": true,
-          "agentMemoryType": "windowSize",
+          "agentMemoryType": "allMessages",
           "agentUserMessage": "<p><span class=\"variable\" data-type=\"mention\" data-id=\"question\" data-label=\"question\">{{ question }}</span> </p>",
           "agentReturnResponseAs": "assistantMessage",
           "agentStructuredOutput": "",
@@ -1437,8 +1436,7 @@
             "maxTokens": "",
             "streaming": true,
             "agentModel": "groqChat"
-          },
-          "agentMemoryWindowSize": "3"
+          }
         },
         "outputAnchors": [
           {
@@ -1463,7 +1461,7 @@
     {
       "id": "conditionAgentAgentflow_1",
       "position": {
-        "x": 1113.0958157347284,
+        "x": 1114.0984293743138,
         "y": 78.38270783173877
       },
       "data": {
@@ -1633,7 +1631,7 @@
       "height": 140,
       "selected": false,
       "positionAbsolute": {
-        "x": 1113.0958157347284,
+        "x": 1114.0984293743138,
         "y": 78.38270783173877
       },
       "dragging": false
@@ -1939,7 +1937,7 @@
               "agentMemoryType": "windowSize"
             },
             "id": "agentAgentflow_2-input-agentMemoryWindowSize-number",
-            "display": true
+            "display": false
           },
           {
             "label": "Max Token Limit",
@@ -2107,7 +2105,7 @@
           ],
           "agentKnowledgeVSEmbeddings": "",
           "agentEnableMemory": true,
-          "agentMemoryType": "windowSize",
+          "agentMemoryType": "allMessages",
           "agentUserMessage": "<p><span class=\"variable\" data-type=\"mention\" data-id=\"question\" data-label=\"question\">{{ question }}</span> </p>",
           "agentReturnResponseAs": "assistantMessage",
           "agentStructuredOutput": "",
@@ -2119,8 +2117,7 @@
             "maxTokens": "",
             "streaming": true,
             "agentModel": "groqChat"
-          },
-          "agentMemoryWindowSize": "6"
+          }
         },
         "outputAnchors": [
           {
@@ -2145,8 +2142,8 @@
     {
       "id": "agentAgentflow_3",
       "position": {
-        "x": 887.1841081804823,
-        "y": 258.3263352253109
+        "x": 889.1841081804823,
+        "y": 257.8263352253109
       },
       "data": {
         "id": "agentAgentflow_3",
@@ -2443,7 +2440,7 @@
               "agentMemoryType": "windowSize"
             },
             "id": "agentAgentflow_3-input-agentMemoryWindowSize-number",
-            "display": true
+            "display": false
           },
           {
             "label": "Max Token Limit",
@@ -2598,14 +2595,14 @@
           "agentMessages": [
             {
               "role": "system",
-              "content": "<p>You respond if the user message contains greetings like \"hello\", \"hey\", or \"hi\".</p><p>Handle greetings gracefully. If the user greets (e.g., “hi”, “hello”, “hey”), respond with a friendly welcome message and prompt:</p><p><strong>Hello! 👋 Welcome to the Dessert Bot.</strong></p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>Mousses</p></li><li><p>(To be added Later 2)</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><h1>Output Format</h1><p>The response should be a friendly message in a conversational tone, maintaining a structure similar to the example provided. It should include a welcome message, a list of desserts, a list of ingredients for substitutions, and a prompt for further assistance.</p><h1>Examples</h1><p><strong>Input:</strong> \"Hi there!\"<br><strong>Output:</strong><br>Hello! 👋 Welcome to the Dessert Bot.</p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>Mousses</p></li><li><p>(To be added Later 2)</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><p><strong>Input:</strong> \"Hey!\"<br><strong>Output:</strong><br>Hello! 👋 Welcome to the Dessert Bot.</p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>Mousses</p></li><li><p>(To be added Later 2)</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><p>(Note: Real examples should reflect the same format and greeting style as in the examples above.)</p>"
+              "content": "<p>You respond if the user message contains greetings like \"hello\", \"hey\", or \"hi\".</p><p>Handle greetings gracefully. If the user greets (e.g., “hi”, “hello”, “hey”), respond with a friendly welcome message and prompt:</p><p><strong>Hello! 👋 Welcome to the Dessert Bot.</strong></p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>Mousses</p></li><li><p>Tarts</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><h1>Output Format</h1><p>The response should be a friendly message in a conversational tone, maintaining a structure similar to the example provided. It should include a welcome message, a list of desserts, a list of ingredients for substitutions, and a prompt for further assistance.</p><h1>Examples</h1><p><strong>Input:</strong> \"Hi there!\"<br><strong>Output:</strong><br>Hello! 👋 Welcome to the Dessert Bot.</p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>Mousses</p></li><li><p>Tarts</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><p><strong>Input:</strong> \"Hey!\"<br><strong>Output:</strong><br>Hello! 👋 Welcome to the Dessert Bot.</p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>Mousses</p></li><li><p>Tarts</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><p>(Note: Real examples should reflect the same format and greeting style as in the examples above.)</p>"
             }
           ],
           "agentTools": "",
           "agentKnowledgeDocumentStores": "",
           "agentKnowledgeVSEmbeddings": "",
           "agentEnableMemory": true,
-          "agentMemoryType": "windowSize",
+          "agentMemoryType": "allMessages",
           "agentUserMessage": "",
           "agentReturnResponseAs": "assistantMessage",
           "agentStructuredOutput": "",
@@ -2617,8 +2614,7 @@
             "maxTokens": "500",
             "streaming": true,
             "agentModel": "groqChat"
-          },
-          "agentMemoryWindowSize": "6"
+          }
         },
         "outputAnchors": [
           {
@@ -2636,8 +2632,8 @@
       "selected": false,
       "dragging": false,
       "positionAbsolute": {
-        "x": 887.1841081804823,
-        "y": 258.3263352253109
+        "x": 889.1841081804823,
+        "y": 257.8263352253109
       }
     },
     {
@@ -3794,7 +3790,7 @@
     {
       "id": "agentAgentflow_6",
       "position": {
-        "x": 1487.7313952945806,
+        "x": 1485.7261680154097,
         "y": 294.3071736587668
       },
       "data": {
@@ -4289,7 +4285,7 @@
       "height": 72,
       "selected": false,
       "positionAbsolute": {
-        "x": 1487.7313952945806,
+        "x": 1485.7261680154097,
         "y": 294.3071736587668
       },
       "dragging": false
@@ -4346,7 +4342,7 @@
       "id": "agentAgentflow_7",
       "position": {
         "x": 1490.5462910322112,
-        "y": 384.46473495107386
+        "y": 382.459507671903
       },
       "data": {
         "id": "agentAgentflow_7",
@@ -4841,7 +4837,7 @@
       "selected": false,
       "positionAbsolute": {
         "x": 1490.5462910322112,
-        "y": 384.46473495107386
+        "y": 382.459507671903
       },
       "dragging": false
     },
